@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Alika Sketch Book</title>
+    <meta name="description" content="Alika Feldman Website" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/styles/lightbox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/stylesheet.css"
+      media="screen"
+    />
+    <script src="/scripts/lightbox-plus-jquery.min.js"></script>
+    <!-- BOOTSTRAP  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Sketch Book Page -->
+  <header>
+    <h1>SKETCHBOOK</h1>
+    <div class="contactHeader">
+      Contact Me
+      <div class="icons">
+        <a href="https://www.facebook.com/alika.feldman.3" target="_blank">
+          <img src="/images/fbIcon.png" />
+        </a>
+        <a href="https://www.instagram.com/alikafeldman" target="_blank">
+          <img src="/images/igIcon.png" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="navTrigger">&#x21DB;</div>
+    <nav class="sidebar">
+      <ul>
+        <li onclick="document.location='/html/index.html'"><div>HOME</div></li>
+        <li onclick="document.location='/html/bodyArt.html'">
+          <div>BODY ART</div>
+        </li>
+        <li onclick="document.location='/html/pen&ink.html'">
+          <div>PEN & INK</div>
+        </li>
+        <li onclick="document.location='/html/sketchbook.html'">
+          <div>SKETCH BOOK</div>
+        </li>
+        <li onclick="document.location='/html/graphicDesign.html'">
+          <div>GRAPHIC DESIGN</div>
+        </li>
+        <li onclick="document.location='/html/aboutAlika.html'">
+          <div>ABOUT</div>
+        </li>
+      </ul>
+    </nav>
+    <script>
+      $(".navTrigger").click(function () {
+        $(this).toggleClass("click");
+        $(".sidebar").toggleClass("show");
+        $(".gallery").toggleClass("hide");
+      });
+    </script>
+    <div class="container">
+      <div class="gallery">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test3.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test3.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test1.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test1.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test2.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test2.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test4.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test4.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test1.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test1.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test3.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test3.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test2.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test2.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test4.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test4.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test2.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test2.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="/testPhotos/test1.png" data-lightbox="bodyart"
+              ><img src="/testPhotos/test1.png" class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      lightbox.option({
+        disableScrolling: true,
+        imageFadeDuration: 400,
+        showImageNumberLabel: false,
+      });
+    </script>
+  </body>
+</html>
